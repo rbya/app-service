@@ -20,4 +20,5 @@ module.exports = {
 ````
 
 This would force the service to use a local database rather than the remote mongo database
+
 3. You may now sart the service with `sails lift` or run the tests with `npm test`
