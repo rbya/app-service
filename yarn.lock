@@ -1203,6 +1203,12 @@ flaverr@^1.0.0:
   dependencies:
     "@sailshq/lodash" "^3.10.2"
 
+fnv-plus@^1.2.10:
+  version "1.2.12"
+  resolved "https://registry.yarnpkg.com/fnv-plus/-/fnv-plus-1.2.12.tgz#00752fc2d80761bacda9bfb9ea098f44cb3746be"
+  dependencies:
+    jsbn "~0.0.0"
+
 for-in@^0.1.5:
   version "0.1.6"
   resolved "https://registry.yarnpkg.com/for-in/-/for-in-0.1.6.tgz#c9f96e89bfad18a545af5ec3ed352a1d9e5b4dc8"
@@ -2017,6 +2023,10 @@ js-yaml@~3.5.2:
     argparse "^1.0.2"
     esprima "^2.6.0"
 
+jsbn@~0.0.0:
+  version "0.0.0"
+  resolved "https://registry.yarnpkg.com/jsbn/-/jsbn-0.0.0.tgz#c52701bdcedbdf7084e1cfc701a7f86464ad7828"
+
 jsbn@~0.1.0:
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/jsbn/-/jsbn-0.1.0.tgz#650987da0dd74f4ebf5a11377a2aa2d273e97dfd"
@@ -2234,7 +2244,7 @@ lodash@2.4.1:
   version "2.4.1"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-2.4.1.tgz#5b7723034dda4d262e5a46fb2c58d7cc22f71420"
 
-lodash@3.10.1, lodash@^3.10, lodash@^3.10.1, lodash@^3.8.0, lodash@~3.10.1:
+lodash@3.10.1, lodash@^3.10, lodash@^3.10.0, lodash@^3.10.1, lodash@^3.2, lodash@^3.8.0, lodash@~3.10.1:
   version "3.10.1"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-3.10.1.tgz#5bf45e8e49ba4189e17d482789dfd15bd140b7b6"
 
@@ -2318,6 +2328,14 @@ map-obj@^1.0.0, map-obj@^1.0.1:
 marlinspike@^0.12:
   version "0.12.15"
   resolved "https://registry.yarnpkg.com/marlinspike/-/marlinspike-0.12.15.tgz#4f1133f8330e9ea3b089efac45d98fb1665e94a3"
+  dependencies:
+    gulp "^3.9.0"
+    lodash "^3.10.1"
+    require-all "^2.0.0"
+
+marlinspike@^1.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/marlinspike/-/marlinspike-1.0.0.tgz#f033289edc6ec74b057760eadcf66263ea2e5bfd"
   dependencies:
     gulp "^3.9.0"
     lodash "^3.10.1"
@@ -2834,7 +2852,7 @@ pluralize@0.0.9:
   version "0.0.9"
   resolved "https://registry.yarnpkg.com/pluralize/-/pluralize-0.0.9.tgz#cc0da2bd676b46af0fd967fa8d39da29d1511942"
 
-pluralize@1.2.1:
+pluralize@1.2.1, pluralize@^1.0.1:
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/pluralize/-/pluralize-1.2.1.tgz#d1a21483fd22bb41e58a12fa3421823140897c45"
 
@@ -3163,7 +3181,7 @@ safefs@^3.1.2:
   dependencies:
     graceful-fs "*"
 
-sails-auth@^2.1.3:
+sails-auth@^2.0, sails-auth@^2.1.3:
   version "2.1.3"
   resolved "https://registry.yarnpkg.com/sails-auth/-/sails-auth-2.1.3.tgz#e8062a29943b2e1e2fdd9413a957d3e0996fa00c"
   dependencies:
@@ -3215,6 +3233,12 @@ sails-generate-controller@~0.10.7:
     merge-defaults ">=0.1.0"
     pluralize "0.0.9"
     underscore.string "~2.3.3"
+
+sails-generate-entities@latest:
+  version "0.11.4"
+  resolved "https://registry.yarnpkg.com/sails-generate-entities/-/sails-generate-entities-0.11.4.tgz#cf27bb03751b5c88b752da76e534eb4f117de5dd"
+  dependencies:
+    lodash "^3.2"
 
 sails-generate-frontend@^0.12.0:
   version "0.12.3"
@@ -3338,6 +3362,18 @@ sails-mongo@^0.12.2:
     validator "4.5.1"
     waterline-cursor "0.0.7"
     waterline-errors "0.10.1"
+
+sails-permissions@^2.2.0:
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/sails-permissions/-/sails-permissions-2.2.0.tgz#28544523a23ed21c9dd9a687bc3692c82714b829"
+  dependencies:
+    fnv-plus "^1.2.10"
+    lodash "^3.10.0"
+    marlinspike "^1.0"
+    pluralize "^1.0.1"
+    sails-auth "^2.0"
+    sails-generate-entities latest
+    waterline-criteria "^0.11.1"
 
 sails-stringfile@~0.3.2:
   version "0.3.2"
@@ -4061,7 +4097,7 @@ watchr@~2.4.13:
     taskgroup "^4.2.0"
     typechecker "^2.0.8"
 
-waterline-criteria@~0.11.2:
+waterline-criteria@^0.11.1, waterline-criteria@~0.11.2:
   version "0.11.2"
   resolved "https://registry.yarnpkg.com/waterline-criteria/-/waterline-criteria-0.11.2.tgz#6a9115563778ef9df54c46c5d1687cba79a84ea1"
   dependencies:
