@@ -10,7 +10,7 @@ module.exports = {
     attributes: {
         type: {
             type: 'string',
-            enum: ['verse', 'sermon', 'article']
+            enum: ['verse', 'sermon', 'article', 'announcement']
         },
         body: {
             type: 'longtext',
