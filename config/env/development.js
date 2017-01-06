@@ -22,6 +22,6 @@ module.exports = {
         migrate: 'safe'
     },
     log: {
-        level: 'verbose'
+        level: 'debug'
     }
 };
