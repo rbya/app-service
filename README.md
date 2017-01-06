@@ -11,14 +11,14 @@ This code auto deploys `master` branch to https://rbya-development.herokuapp.com
 ## To run locally:
 1. Clone repo
 2. Create file `config/local.js` with the contents:
-````
-module.exports = {
-    models: {
-        connection: 'localDiskDb',
-    }
-};
-````
 
-This would force the service to use a local database rather than the remote mongo database
+  ```
+    module.exports = {
+        models: {
+            connection: 'localDiskDb',
+        }
+    };
+  ```
+  This would force the service to use a local database rather than the remote mongo database
 
-3. You may now sart the service with `sails lift` or run the tests with `npm test`
+3. You can now sart the service with `sails lift` or run the tests with `npm test`
