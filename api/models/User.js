@@ -7,8 +7,9 @@
 
 module.exports = {
 
-  attributes: {
-
-  }
+    attributes: {
+        roles: {
+            type: 'string'
+        }
+    }
 };
-
